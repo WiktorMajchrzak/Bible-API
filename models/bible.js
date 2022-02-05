@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const chapterSchema = new mongoose.Schema({
+/*const chapterSchema = new mongoose.Schema({
     verses: [String],
     versesLength: {
         type: Number
@@ -21,7 +21,7 @@ const bookSchema = new mongoose.Schema({
     chaptersLength: {
         type: Number
     }
-})
+})*/
 
 const bibleSchema = new mongoose.Schema({
     name: {
@@ -31,16 +31,35 @@ const bibleSchema = new mongoose.Schema({
     abbreviation: {
         type: String,
         required: true,
-        unique: true,
     },
     language: {
         type: String,
         required: true
     },
-    books: [bookSchema],
+    books: [{
+        name: {
+            type: String,
+            required: true
+        },
+        abbreviation: {
+            type: String,
+            required: true,
+        },
+        chapters: [{
+            verses: [String],
+            versesLength: {
+                type: Number
+            }
+        }],
+        chaptersLength: {
+            type: Number
+        }
+    }],
     booksLength: {
         type: Number
     }
 })
+
+bibleSchema.index({ 'abbreviation': 1, 'books.abbreviation': 1}, { unique: true });
 
 module.exports = mongoose.model('Bible', bibleSchema)
