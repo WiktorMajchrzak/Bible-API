@@ -10,12 +10,103 @@ GET http://localhost:3000/subscribers/name/Wiktor
 
 ###
 
-POST http://localhost:3000/subscribers
+POST http://70.34.248.247/nodejs/subscribers
 Content-Type: application/json
 
 {
     "name": "Wiktor",
     "subscribedToChannel": "Web Dev Simplified"
+}
+
+###
+
+POST http://localhost:3000/bible
+Content-Type: application/json
+
+{
+    "name": "Biblia Warszawska",
+    "abbreviation": "bw",
+    "language": "pl",
+    "books": [
+        {
+            "name": "Księga Rodzaju",
+            "abbreviation": "rdz",
+            "chapters": [
+                {
+                    "verses": [
+                        "Na początku stworzył Bóg niebo i ziemię.",
+                        "A ziemia była pustkowiem i chaosem; ciemność była nad otchłanią, a Duch Boży unosił się nad powierzchnią wód.",
+                        "I rzekł Bóg: Niech stanie się światłość. I stała się światłość.",
+                        "I widział Bóg, że światłość była dobra. Oddzielił tedy Bóg światłość od ciemności.",
+                        "I nazwał Bóg światłość dniem, a ciemność nazwał nocą. I nastał wieczór, i nastał poranek - dzień pierwszy.",
+                        "Potem rzekł Bóg: Niech powstanie sklepienie pośród wód i niech oddzieli wody od wód!",
+                        "Uczynił więc Bóg sklepienie, i oddzielił wody pod sklepieniem od wód nad sklepieniem; i tak się stało.",
+                        "I nazwał Bóg sklepienie niebem. I nastał wieczór, i nastał poranek - dzień drugi.",
+                        "Potem rzekł Bóg: Niech się zbiorą wody spod nieba na jedno miejsce i niech się ukaże suchy ląd! I tak się stało.",
+                        "Wtedy nazwał Bóg suchy ląd ziemią, a zbiorowisko wód nazwał morzem. I widział Bóg, że to było dobre.",
+                        "Potem rzekł Bóg: Niech się zazieleni ziemia zieloną trawą, wydającą nasienie i drzewem owocowym, rodzącym według rodzaju swego owoc, w którym jest jego nasienie na ziemi! I tak się stało.",
+                        "I wydała ziemia zieleń, ziele wydające nasienie według rodzajów jego, i drzewo owocowe, w którym jest nasienie według rodzaju jego. I widział Bóg, że to było dobre.",
+                        "I nastał wieczór, i nastał poranek - dzień trzeci.",
+                        "Potem rzekł Bóg: Niech powstaną światła na sklepieniu niebios, aby oddzielały dzień od nocy i były znakami dla oznaczania pór, dni i lat!",
+                        "Niech będą światłami na sklepieniu niebios, aby świecić nad ziemią! I tak się stało.",
+                        "I uczynił Bóg dwa wielkie światła: większe światło, aby rządziło dniem, i mniejsze światło, aby rządziło nocą, oraz gwiazdy.",
+                        "I umieścił je Bóg na sklepieniu niebios, aby świeciły nad ziemią.",
+                        "I rządziły dniem i nocą oraz aby oddzielały światłość od ciemności. I widział Bóg, że to było dobre.",
+                        "I nastał wieczór, i nastał poranek - dzień czwarty.",
+                        "Potem rzekł Bóg: Niech zaroją się wody mrowiem istot żywych, a ptactwo niech lata nad ziemią pod sklepieniem niebios!",
+                        "I stworzył Bóg wielkie potwory i wszelkie żywe, ruchliwe istoty, którymi zaroiły się wody, według ich rodzajów, nadto wszelkie ptactwo skrzydlate według rodzajów jego; i widział Bóg, że to było dobre.",
+                        "I błogosławił im Bóg mówiąc: Rozradzajcie się i rozmnażajcie się, i napełniajcie wody w morzach, a ptactwo niech się rozmnaża na ziemi!",
+                        "I nastał wieczór, i nastał poranek - dzień piąty.",
+                        "Potem rzekł Bóg: Niech wyda ziemia istotę żywą według rodzaju jej: bydło, płazy i dzikie zwierzęta według rodzajów ich. I tak się stało.",
+                        "I uczynił Bóg dzikie zwierzęta według rodzajów ich, i bydło według rodzaju jego, i wszelkie płazy ziemne według rodzajów ich; i widział Bóg, że to było dobre.",
+                        "Potem rzekł Bóg: Uczyńmy człowieka na obraz nasz, podobnego do nas i niech panuje nad rybami morskimi i nad ptactwem niebios, i nad bydłem, i nad całą ziemią, i nad wszelkim płazem pełzającym po ziemi.",
+                        "I stworzył Bóg człowieka na obraz swój. Na obraz Boga stworzył go. Jako mężczyznę i niewiastę stworzył ich.",
+                        "I błogosławił im Bóg, i rzekł do nich Bóg: Rozradzajcie się i rozmnażajcie się, i napełniajcie ziemię, i czyńcie ją sobie poddaną; panujcie nad rybami morskimi i nad ptactwem niebios, i nad wszelkimi zwierzętami, które się poruszają po ziemi!",
+                        "Potem rzekł Bóg: Oto daję wam wszelką roślinę wydającą nasienie na całej ziemi i wszelkie drzewa, których owoc ma w sobie nasienie: niech będzie dla was pokarmem!",
+                        "Wszystkim zaś dzikim zwierzętom i wszelkiemu ptactwu niebios, i wszelkim płazom na ziemi, w których jest tchnienie życia, daję na pokarm wszystkie rośliny. I tak się stało.",
+                        "I spojrzał Bóg na wszystko, co uczynił, a było to bardzo dobre. I nastał wieczór, i nastał poranek - dzień szósty."
+                    ]
+                },
+                {
+                    "verses": [
+                        "Tak zostały ukończone niebo i ziemia oraz cały ich zastęp.",
+                        "I ukończył Bóg w siódmym dniu dzieło swoje, które uczynił, i odpoczął dnia siódmego od wszelkiego dzieła, które uczynił.",
+                        "I pobłogosławił Bóg dzień siódmy, i poświęcił go, bo w nim odpoczął od wszelkiego dzieła swego, którego Bóg dokonał w stworzeniu.",
+                        "Takie były dzieje nieba i ziemi podczas ich stworzenia. W dniu, kiedy Pan Bóg uczynił ziemię i niebo,",
+                        "a jeszcze nie było żadnego krzewu polnego na ziemi ani nie wyrosło żadne ziele polne, bo Pan Bóg nie spuścił deszczu na ziemię i nie było człowieka, który by uprawiał rolę,",
+                        "a tylko mgła wydobywała się z ziemi i zwilżała całą powierzchnię gleby,",
+                        "ukształtował Pan Bóg człowieka z prochu ziemi i tchnął w nozdrza jego dech życia. Wtedy stał się człowiek istotą żywą.",
+                        "Potem zasadził Pan Bóg ogród w Edenie, na wschodzie. Tam umieścił człowieka, którego stworzył.",
+                        "I sprawił Pan Bóg, że wyrosło z ziemi wszelkie drzewo przyjemne do oglądania i dobre do jedzenia oraz drzewo życia w środku ogrodu i drzewo poznania dobra i zła.",
+                        "A rzeka wypływała z Edenu, aby nawadniać ogród. Potem rozdzielała się na cztery odnogi.",
+                        "Nazwa pierwszej: Piszon. To ta, która opływa cały kraj Chawila, gdzie jest złoto,",
+                        "a złoto tego kraju jest wyborne. Tam jest żywica bdelium i kamień onyksowy.",
+                        "Nazwa drugiej rzeki: Gichon. To ta, która opływa cały kraj Kusz.",
+                        "A nazwa trzeciej rzeki: Chiddekel. To ta, która płynie na wschód od Asyrii. Czwartą zaś rzeką jest Eufrat.",
+                        "I wziął Pan Bóg człowieka i osadził go w ogrodzie Eden, aby go uprawiał i strzegł.",
+                        "I dał Pan Bóg człowiekowi taki rozkaz: Z każdego drzewa tego ogrodu możesz jeść,",
+                        "ale z drzewa poznania dobra i zła nie wolno ci jeść, bo gdy tylko zjesz z niego, na pewno umrzesz.",
+                        "Potem rzekł Pan Bóg: Niedobrze jest człowiekowi, gdy jest sam. Uczynię mu pomoc odpowiednią dla niego.",
+                        "Utworzył więc Pan Bóg z ziemi wszelkie dzikie zwierzęta i wszelkie ptactwo niebios i przyprowadził do człowieka, aby zobaczyć, jak je nazwie, a każda istota żywa miała mieć taką nazwę, jaką nada jej człowiek.",
+                        "Nadał tedy człowiek nazwy wszelkiemu bydłu i ptactwu niebios, i wszelkim dzikim zwierzętom. Lecz dla człowieka nie znalazła się pomoc dla niego odpowiednia.",
+                        "Wtedy zesłał Pan Bóg głęboki sen na człowieka, tak że zasnął. Potem wyjął jedno z jego żeber i wypełnił ciałem to miejsce.",
+                        "A z żebra, które wyjął z człowieka, ukształtował Pan Bóg kobietę i przyprowadził ją do człowieka.",
+                        "Wtedy rzekł człowiek: Ta dopiero jest kością z kości moich i ciałem z ciała mojego. Będzie się nazywała mężatką, gdyż z męża została wzięta.",
+                        "Dlatego opuści mąż ojca swego i matkę swoją i złączy się z żoną swoją, i staną się jednym ciałem.",
+                        "A człowiek i jego żona byli oboje nadzy, lecz nie wstydzili się."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Ksiega Wyjscia",
+            "abbreviation": "wj"
+        },
+        {
+            "name": "Księga Kaplanska",
+            "abbreviation": "kpl"
+        }
+    ]
 }
 
 ###
@@ -29,4 +120,9 @@ Content-Type: application/json
 
 ###
 
-DELETE http://localhost:3000/subscribers/61fda1c88e898042451a284c
+DELETE http://localhost:3000/bible/bw
+
+
+###
+
+GET http://70.34.248.247:3000/subscribers
