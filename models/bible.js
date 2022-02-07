@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-/*const chapterSchema = new mongoose.Schema({
+const chapterSchema = new mongoose.Schema({
     verses: [String],
     versesLength: {
         type: Number
@@ -17,11 +17,15 @@ const bookSchema = new mongoose.Schema({
         required: true,
         unique: true
     },
+    title: {
+        type: String,
+        required: true
+    },
     chapters: [chapterSchema],
     chaptersLength: {
         type: Number
     }
-})*/
+})
 
 const bibleSchema = new mongoose.Schema({
     name: {
@@ -36,25 +40,7 @@ const bibleSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    books: [{
-        name: {
-            type: String,
-            required: true
-        },
-        abbreviation: {
-            type: String,
-            required: true,
-        },
-        chapters: [{
-            verses: [String],
-            versesLength: {
-                type: Number
-            }
-        }],
-        chaptersLength: {
-            type: Number
-        }
-    }],
+    books: [bookSchema],
     booksLength: {
         type: Number
     }
