@@ -9,13 +9,18 @@ const chapterSchema = new mongoose.Schema({
 
 const bookSchema = new mongoose.Schema({
     name: {
-        type: String,
-        required: true
+        pl: {
+            type: String,
+            required: true
+        },
+        en: {
+            type: String,
+            required: true
+        }
     },
     abbreviation: {
         type: String,
-        required: true,
-        unique: true
+        required: true
     },
     title: {
         type: String,
